@@ -20,21 +20,21 @@ const t_head = [
 ];
 
 const formsData = [
-  {
-    fieldName: "First Name",
-    fieldType: "text",
-    fieldPlaceholder: "Last Name",
-  },
-  {
-    fieldName: "Last Name",
-    fieldType: "text",
-    fieldPlaceholder: "Last Name",
-  },
-  {
-    fieldName: "Phone number",
-    fieldType: "number",
-    fieldPlaceholder: "Phone number",
-  },
+  // {
+  //   fieldName: "First Name",
+  //   fieldType: "text",
+  //   fieldPlaceholder: "Last Name",
+  // },
+  // {
+  //   fieldName: "Last Name",
+  //   fieldType: "text",
+  //   fieldPlaceholder: "Last Name",
+  // },
+  // {
+  //   fieldName: "Phone number",
+  //   fieldType: "number",
+  //   fieldPlaceholder: "Phone number",
+  // },
 ];
 
 function PhoneList() {

@@ -19,21 +19,8 @@ const t_head = [
 ];
 
 const formsData = [
-  {
-    fieldName: "First name",
-    fieldType: "text",
-    fieldPlaceholder: "First name",
-  },
-  {
-    fieldName: "Last name",
-    fieldType: "text",
-    fieldPlaceholder: "Last name",
-  },
-  {
-    fieldName: "Email",
-    fieldType: "email",
-    fieldPlaceholder: "Email",
-  },
+  //  ki
+  
 ];
 
 function Employee() {
@@ -100,7 +87,7 @@ function Employee() {
       (value) => value === "" || value === null
     );
     const app_model = "users/Employee/";
-    const serializer_class = "Employee";
+    const serializer_class = "User";
     const searchData = { formData, app_model, serializer_class };
     if (allKeysEmpty) {
       // If the search field is empty, fetch all formData
