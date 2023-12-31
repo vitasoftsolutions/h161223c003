@@ -16,17 +16,14 @@ import {
 } from "react-icons/md";
 import { FaMoneyCheckDollar } from "react-icons/fa6";
 import { TbFileSettings } from "react-icons/tb";
-import {
-  BsCalendar2Check,
-  BsFillPersonPlusFill,
-} from "react-icons/bs";
+import { BsCalendar2Check, BsFillPersonPlusFill } from "react-icons/bs";
 import { GoPasskeyFill } from "react-icons/go";
 import { SiFlatpak } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 const Menus = [
-   // HRM
-   {
+  // HRM
+  {
     title: "Hrm",
     icons: <FaHandHoldingUsd />,
     subMenus: [
@@ -47,62 +44,59 @@ const Menus = [
       },
     ],
   },
-// Employee
-{
-  title: "Employee",
-  icons: <FaUsersCog />,
-  subMenus: [
-    {
-      title: "Employee",
-      icons: <FaUsersCog />,
-      to: "/employee",
-    },
-  ],
-},
-// Roles
-{
-  title: "Roles",
-  icons: <FaMoneyCheckDollar />,
-  subMenus: [
-    {
-      title: "Roles",
-      icons: <FaMoneyCheckDollar />,
-      to: "/roles",
-    },
-  ],
-},
- // Phone number
- {
-  title: "Phone",
-  icons: <FaMobileAlt />,
-  subMenus: [
-    {
-      title: "Phone",
-      icons: <MdInstallMobile />,
-      to: "/phone",
-    },
-  ],
-},
- // Utilities
- {
-  title: "Utilities",
-  icons: <FiSettings />,
-  subMenus: [
-    {
-      title: "App Label",
-      icons: <FiSettings />,
-      to: "/app-label",
-    },
-    {
-      title: "Types",
-      icons: <FaMoneyCheckDollar />,
-      to: "/types",
-    },
-  ],
-},
-
-
-
+  // Employee
+  {
+    title: "Employee",
+    icons: <FaUsersCog />,
+    subMenus: [
+      {
+        title: "Employee",
+        icons: <FaUsersCog />,
+        to: "/employee",
+      },
+    ],
+  },
+  // Roles
+  {
+    title: "Roles",
+    icons: <FaMoneyCheckDollar />,
+    subMenus: [
+      {
+        title: "Roles",
+        icons: <FaMoneyCheckDollar />,
+        to: "/roles",
+      },
+    ],
+  },
+  // Phone number
+  {
+    title: "Phone",
+    icons: <FaMobileAlt />,
+    subMenus: [
+      {
+        title: "Phone",
+        icons: <MdInstallMobile />,
+        to: "/phone",
+      },
+    ],
+  },
+  // Utilities
+  {
+    title: "Utilities",
+    icons: <FiSettings />,
+    subMenus: [
+      {
+        title: "App Label",
+        icons: <FiSettings />,
+        to: "/app-label",
+      },
+      {
+        title: "Types",
+        icons: <FaMoneyCheckDollar />,
+        to: "/types",
+      },
+    ],
+  },
 ];
 
 const SideBar = ({ open, setOpen }) => {
@@ -138,7 +132,12 @@ const SideBar = ({ open, setOpen }) => {
   }, []);
 
   return (
-    <div className="mt-10 bg-erp_menu min-h-full">
+    <div className={`bg-erp_menu min-h-full ${open ? "w-60" : "w-20 "}`}>
+      <div className="h-16 flex justify-center items-center">
+        <Link to={"/"} className={`text-success mx-6 font-bold ${open ? "text-xl" : "text-xs"}`}>
+          E R P
+        </Link>
+      </div>
       <div
         className={`${
           open ? "w-60" : "w-20 "
@@ -151,7 +150,7 @@ const SideBar = ({ open, setOpen }) => {
           onClick={() => setOpen(!open)}
         />
 
-        <ul className="pt-10">
+        <ul className="pt-5">
           {Menus?.map((Menu, index) => (
             <div key={index}>
               {Menu.subMenus && Menu.subMenus.length > 0 ? (
@@ -176,7 +175,7 @@ const SideBar = ({ open, setOpen }) => {
                       <span
                         className={`${
                           !open && "hidden scale-0"
-                        } origin-left duration-200`}
+                        } origin-left duration-200 text-erp_extended_icons`}
                       >
                         {expandedMenus.includes(index) ? "-" : "+"}
                       </span>

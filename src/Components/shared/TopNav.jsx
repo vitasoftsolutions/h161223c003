@@ -9,12 +9,8 @@ function TopNav() {
   };
 
   return (
-    <div className="navbar h-10 shadow-md shadow-blue-200">
-      <div className="flex-1 h-10">
-        <Link to={"/"} className="text-success mx-6 text-xl font-bold">
-          E R P
-        </Link>
-      </div>
+    <div className="navbar w-full h-10 shadow-md shadow-blue-200">
+      
       <div className="flex-none h-10 gap-2">
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">

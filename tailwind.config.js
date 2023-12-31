@@ -36,11 +36,12 @@ export default {
         // Others
         erp_bg_main: "#EDE4D9",
         erp_blue: "blue",
-        erp_menu: "#F8F9FA",
-        erp_menu_icons: "#007BFF",
-        erp_menu_text: "#343A40",
-        erp_submenu_icons: "#007BFF",
-        erp_submenu_text: "#343A40",
+        erp_menu: "#1B222C",
+        erp_menu_icons: "#fff",
+        erp_menu_text: "#fff",
+        erp_submenu_icons: "#fff",
+        erp_submenu_text: "#fff",
+        erp_extended_icons: "#fff",
 
       },
     },
