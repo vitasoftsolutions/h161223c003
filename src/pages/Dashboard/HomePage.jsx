@@ -19,8 +19,8 @@ const top_cards = [
     number: "123.40",
     footer_icons: <FaRegBookmark />,
     footer_text: "All erp users",
-    bg1: "#DB8282",
-    bg2: "#DDB249",
+    bg1: "#1B222C",
+    bg2: "#1B222C",
   },
   {
     icons: <GiArcheryTarget />,
@@ -28,8 +28,8 @@ const top_cards = [
     number: "123.40",
     footer_icons: <FaRegBookmark />,
     footer_text: "All erp users",
-    bg1: "#84AEC2",
-    bg2: "#6D53DC",
+    bg1: "#1B222C",
+    bg2: "#1B222C",
   },
   {
     icons: <FaMoneyBillTrendUp />,
@@ -37,8 +37,8 @@ const top_cards = [
     number: "123.40",
     footer_icons: <FaRegBookmark />,
     footer_text: "All erp users",
-    bg1: "#04616E",
-    bg2: "#B7D7C9",
+    bg1: "#1B222C",
+    bg2: "#1B222C",
   },
   {
     icons: <IoPieChartSharp />,
@@ -46,8 +46,8 @@ const top_cards = [
     number: "123.40",
     footer_icons: <FaRegBookmark />,
     footer_text: "All erp users",
-    bg1: "#DB8282",
-    bg2: "#E54D24",
+    bg1: "#1B222C",
+    bg2: "#1B222C",
   },
 ];
 
@@ -134,7 +134,7 @@ function HomePage() {
                 return (
                   <div
                     key={index}
-                    className="shadow-lg shadow-blue-200 col-span-2 p-4"
+                    className="bg-[#1B222C] rounded-md shadow-lg shadow-blue-200 col-span-2 p-4"
                   >
                     <div className="flex justify-center">
                       <div className="bg-blue-200 bg-opacity-60 text-blue-500 w-fit items-center rounded-full p-3">
@@ -143,12 +143,12 @@ function HomePage() {
                     </div>
                     {/* Texts */}
                     <div className="flex justify-center items-center">
-                      <h3 className="text-3xl font-bold text-gray-600">
+                      <h3 className="text-3xl font-bold text-gray-200">
                         {dt.number}
                       </h3>
                     </div>
                     <div className="flex justify-center items-center">
-                      <p className="text-xl my-2 text-gray-600">{dt.text}</p>
+                      <p className="text-xl my-2 text-gray-200">{dt.text}</p>
                     </div>
                     <div className="flex justify-center items-center">
                       <p className="text-red-400">{dt.percentage}</p>
